@@ -1,0 +1,48 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Debug/Release
+Debug/
+Release/
+x64/
+x86/
+
+# .NET Core / .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+packages/
+*.nupkg
+
+# VS Code
+.vscode/
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+
+# Dotnet CLI
+*.runtimeconfig.dev.json
