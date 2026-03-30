@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bouquet.Domain", "BouquetMVC.Domain\Bouquet.Domain.csproj", "{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17AF2D10-1359-44BC-AC3E-DCA4225578AD}
+	EndGlobalSection
+EndGlobal
