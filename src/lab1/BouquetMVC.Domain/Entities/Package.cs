@@ -9,14 +9,20 @@ namespace BouquetMVC.Domain.Entities
 {
     public class Package : Entity
     {
-        public string Kind { get; private set; }
-        public string Colour { get; private set; }
+        public string Material { get; private set; }
+
+        public string Color { get; private set; }
+
         public decimal Price { get; private set; }
 
-        public Package(string kind, string colour, decimal price)
+        private Package()
         {
-            Kind = kind;
-            Colour = colour;
+        }
+
+        public Package(string material, string color, decimal price)
+        {
+            Material = material;
+            Color = color;
             Price = price;
         }
     }

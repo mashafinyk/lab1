@@ -10,18 +10,28 @@ namespace BouquetMVC.Domain.Entities
     public class UserAddress : Entity
     {
         public string City { get; private set; }
+
         public string Street { get; private set; }
+
         public string BuildingNumber { get; private set; }
-        public string Number { get; private set; }
 
         public int UserId { get; private set; }
 
-        public UserAddress(string city, string street, string building, string number, int userId)
+        public User User { get; private set; }
+
+        private UserAddress()
+        {
+        }
+
+        public UserAddress(
+            string city,
+            string street,
+            string buildingNumber,
+            int userId)
         {
             City = city;
             Street = street;
-            BuildingNumber = building;
-            Number = number;
+            BuildingNumber = buildingNumber;
             UserId = userId;
         }
     }

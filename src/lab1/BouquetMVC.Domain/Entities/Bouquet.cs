@@ -1,4 +1,4 @@
-﻿using BouquetMVC.Domain.Entities;
+﻿using BouquetMVС.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +18,11 @@ namespace BouquetMVC.Domain.Entities
         public int? PromotionId { get; private set; }
 
         public Promotion Promotion { get; private set; }
+        public ICollection<BouquetAndFlower> BouquetAndFlowers { get; private set; }
 
         private Bouquet()
         {
+            BouquetAndFlowers = new List<BouquetAndFlower>();
         }
 
         public Bouquet(
@@ -33,6 +35,8 @@ namespace BouquetMVC.Domain.Entities
             Description = description;
             Price = price;
             PromotionId = promotionId;
+
+            BouquetAndFlowers = new List<BouquetAndFlower>();
         }
     }
 }

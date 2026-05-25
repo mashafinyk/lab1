@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouquetMVC.Domain", "Bouque
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouquetMVC.Infrastracture", "BouquetMVC.Infrastracture\BouquetMVC.Infrastracture.csproj", "{77D68BA4-2263-4776-9B8A-373DF4DF1ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouquetMVC.WebMVC", "BouquetMVC.WebMVC\BouquetMVC.WebMVC.csproj", "{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{77D68BA4-2263-4776-9B8A-373DF4DF1ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77D68BA4-2263-4776-9B8A-373DF4DF1ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77D68BA4-2263-4776-9B8A-373DF4DF1ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DC48E8E2-BDC2-4D5F-BD9A-237B9711F390} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{77D68BA4-2263-4776-9B8A-373DF4DF1ED0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{47CCCFF3-0A66-4BEC-B4D8-C6BF3DFD9B70} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17AF2D10-1359-44BC-AC3E-DCA4225578AD}
