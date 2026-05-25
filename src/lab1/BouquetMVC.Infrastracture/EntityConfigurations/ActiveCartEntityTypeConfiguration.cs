@@ -24,7 +24,7 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
 
             builder.HasIndex(x => x.UserId).IsUnique();
 
-            builder.HasOne<User>()
+            builder.HasOne(x => x.User)
                 .WithOne()
                 .HasForeignKey<ActiveCart>(x => x.UserId)
                 .HasConstraintName("FK_ActiveCart_User");

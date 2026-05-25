@@ -11,6 +11,8 @@ namespace BouquetMVС.Domain.Entities
     {
         public int FlowerId { get; private set; }
         public int BouquetId { get; private set; }
+        public Bouquet Bouquet { get; private set; }
+        public TypeOfFlower Flower { get; private set; }
 
         public BouquetAndFlower(int flowerId, int bouquetId)
         {

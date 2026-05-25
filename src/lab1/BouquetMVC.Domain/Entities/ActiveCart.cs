@@ -10,12 +10,19 @@ namespace BouquetMVC.Domain.Entities
     public class ActiveCart : Entity
     {
         public DateTime CreationDate { get; private set; }
-
         public string Status { get; private set; }
 
         public int UserId { get; private set; }
 
-        public ActiveCart(DateTime creationDate, string status, int userId)
+        public User User { get; private set; }
+
+        private ActiveCart()
+        {
+        }
+
+        public ActiveCart(DateTime creationDate,
+                          string status,
+                          int userId)
         {
             CreationDate = creationDate;
             Status = status;

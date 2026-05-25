@@ -24,12 +24,12 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.UserId).HasColumnName("user id").IsRequired();
             builder.Property(x => x.ShopId).HasColumnName("shop id");
 
-            builder.HasOne<User>()
-                .WithMany()
-                .HasForeignKey(x => x.UserId)
-                .HasConstraintName("FK_Orders_User");
+            builder.HasOne(x => x.User)
+            .WithMany()
+            .HasForeignKey(x => x.UserId)
+            .HasConstraintName("FK_Orders_User");
 
-            builder.HasOne<Shop>()
+            builder.HasOne(x => x.Shop)
                 .WithMany()
                 .HasForeignKey(x => x.ShopId)
                 .HasConstraintName("FK_Orders_Shop");

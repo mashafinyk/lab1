@@ -20,12 +20,12 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.BouquetId).HasColumnName("bouquet id");
             builder.Property(x => x.FlowerId).HasColumnName("flower id");
 
-            builder.HasOne<global::BouquetMVC.Domain.Entities.Bouquet>()
-                .WithMany()
+            builder.HasOne(x => x.Bouquet)
+                .WithMany(x => x.BouquetAndFlowers)
                 .HasForeignKey(x => x.BouquetId)
                 .HasConstraintName("FK_BouquetAndFlower_Bouquet");
 
-            builder.HasOne<global::BouquetMVC.Domain.Entities.TypeOfFlower>()
+            builder.HasOne(x => x.Flower)
                 .WithMany()
                 .HasForeignKey(x => x.FlowerId)
                 .HasConstraintName("FK_BouquetAndFlower_Flower");

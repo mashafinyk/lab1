@@ -22,17 +22,17 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.PackageId).HasColumnName("package id");
             builder.Property(x => x.Quantity).HasColumnName("quantity").IsRequired();
 
-            builder.HasOne<Orders>()
+            builder.HasOne(x => x.Order)
                 .WithMany()
                 .HasForeignKey(x => x.OrderId)
                 .HasConstraintName("FK_OrderBouquet_Orders");
 
-            builder.HasOne<Bouquet>()
+            builder.HasOne(x => x.Bouquet)
                 .WithMany()
                 .HasForeignKey(x => x.BouquetId)
                 .HasConstraintName("FK_OrderBouquet_Bouquet");
 
-            builder.HasOne<Package>()
+            builder.HasOne(x => x.Package)
                 .WithMany()
                 .HasForeignKey(x => x.PackageId)
                 .HasConstraintName("FK_OrderBouquet_Package");

@@ -26,7 +26,7 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
 
             builder.HasIndex(x => x.OrderId).IsUnique();
 
-            builder.HasOne<Orders>()
+            builder.HasOne(x => x.Order)
                 .WithOne()
                 .HasForeignKey<Payment>(x => x.OrderId)
                 .HasConstraintName("FK_Payment_Orders");

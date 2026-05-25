@@ -23,7 +23,7 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.BuildingNumber).HasColumnName("building number").HasMaxLength(20).IsRequired();
             builder.Property(x => x.UserId).HasColumnName("user id").IsRequired();
 
-            builder.HasOne<User>()
+            builder.HasOne(x => x.User)
                 .WithMany()
                 .HasForeignKey(x => x.UserId)
                 .HasConstraintName("FK_UserAddress_User");

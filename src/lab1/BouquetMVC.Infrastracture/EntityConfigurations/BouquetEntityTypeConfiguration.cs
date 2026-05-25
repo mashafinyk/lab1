@@ -23,10 +23,10 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.Price).HasColumnName("price").HasColumnType("decimal(10,2)").IsRequired();
             builder.Property(x => x.PromotionId).HasColumnName("promotion id");
 
-            builder.HasOne<Promotion>()
-                .WithMany()
-                .HasForeignKey(x => x.PromotionId)
-                .HasConstraintName("FK_Bouquet_Promotion");
+            builder.HasOne(x => x.Promotion)
+            .WithMany()
+            .HasForeignKey(x => x.PromotionId)
+            .HasConstraintName("FK_Bouquet_Promotion");
         }
     }
 }

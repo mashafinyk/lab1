@@ -14,12 +14,17 @@ namespace BouquetMVC.Domain.Entities
         public string OpeningTime { get; private set; }
         public string ClosingTime { get; private set; }
 
-        public Shop(string address, string phoneNumber, string workingHours)
+        private Shop()
+        {
+        }
+
+        public Shop(string address, string phoneNumber,
+                    string openingTime, string closingTime)
         {
             Address = address;
             PhoneNumber = phoneNumber;
-            OpeningTime = workingHours;
-            ClosingTime = ClosingTime;
+            OpeningTime = openingTime;
+            ClosingTime = closingTime;
         }
     }
 }

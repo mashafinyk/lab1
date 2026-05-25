@@ -23,10 +23,10 @@ namespace BouquetMVC.Infrastracture.EntityConfigurations
             builder.Property(x => x.Status).HasColumnName("status").HasMaxLength(50);
             builder.Property(x => x.ShopId).HasColumnName("shop id").IsRequired();
 
-            builder.HasOne<Shop>()
-                .WithMany()
-                .HasForeignKey(x => x.ShopId)
-                .HasConstraintName("FK_Delivery_Shop");
+            builder.HasOne(x => x.Shop)
+            .WithMany()
+            .HasForeignKey(x => x.ShopId)
+            .HasConstraintName("FK_Delivery_Shop");
         }
     }
 }
