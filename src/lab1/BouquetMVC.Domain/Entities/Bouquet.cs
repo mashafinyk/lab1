@@ -5,21 +5,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
     public class Bouquet : Entity, IAggregateRoot
     {
+        public string Name { get; private set; }
+
+        public string Description { get; private set; }
+
         public decimal Price { get; private set; }
-        public double Height { get; private set; }
-        public string Kind { get; private set; }
 
         public int? PromotionId { get; private set; }
 
-        public Bouquet(decimal price, double height, string kind, int? promotionId = null)
+        public Promotion Promotion { get; private set; }
+
+        private Bouquet()
         {
+        }
+
+        public Bouquet(
+            string name,
+            string description,
+            decimal price,
+            int? promotionId)
+        {
+            Name = name;
+            Description = description;
             Price = price;
-            Height = height;
-            Kind = kind;
             PromotionId = promotionId;
         }
     }

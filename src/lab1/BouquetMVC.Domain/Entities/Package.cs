@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
     public class Package : Entity
     {

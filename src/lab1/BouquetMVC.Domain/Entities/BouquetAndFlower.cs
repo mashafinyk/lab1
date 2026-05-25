@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVС.Domain.Entities
 {
-    public class BouquetFlower : Entity
+    public class BouquetAndFlower : Entity
     {
         public int FlowerId { get; private set; }
         public int BouquetId { get; private set; }
 
-        public BouquetFlower(int flowerId, int bouquetId)
+        public BouquetAndFlower(int flowerId, int bouquetId)
         {
             FlowerId = flowerId;
             BouquetId = bouquetId;

@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
-    public class Cart : Entity
+    public class ActiveCart : Entity
     {
         public DateTime CreationDate { get; private set; }
+
         public string Status { get; private set; }
 
         public int UserId { get; private set; }
 
-        public Cart(DateTime creationDate, string status, int userId)
+        public ActiveCart(DateTime creationDate, string status, int userId)
         {
             CreationDate = creationDate;
             Status = status;

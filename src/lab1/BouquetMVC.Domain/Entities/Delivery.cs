@@ -5,19 +5,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
     public class Delivery : Entity
     {
-        public string Status { get; private set; }
         public DateTime Date { get; private set; }
+
+        public string Type { get; private set; }
+
+        public string Status { get; private set; }
 
         public int ShopId { get; private set; }
 
-        public Delivery(string status, DateTime date, int shopId)
+        public Shop Shop { get; private set; }
+
+        private Delivery()
         {
-            Status = status;
+        }
+
+        public Delivery(DateTime date, string type, string status, int shopId)
+        {
             Date = date;
+            Type = type;
+            Status = status;
             ShopId = shopId;
         }
     }

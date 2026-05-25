@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
     public class UserAddress : Entity
     {
         public string City { get; private set; }
         public string Street { get; private set; }
-        public string Building { get; private set; }
+        public string BuildingNumber { get; private set; }
         public string Number { get; private set; }
 
         public int UserId { get; private set; }
@@ -20,7 +20,7 @@ namespace Bouquet.Domain.Entities
         {
             City = city;
             Street = street;
-            Building = building;
+            BuildingNumber = building;
             Number = number;
             UserId = userId;
         }

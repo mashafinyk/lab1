@@ -5,19 +5,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
     public class Payment : Entity
     {
-        public string PaymentType { get; private set; }
+        public DateTime Date { get; private set; }
+
+        public string Type { get; private set; }
+
         public string Status { get; private set; }
-        public decimal Amount { get; private set; }
+
+        public string Amount { get; private set; }
 
         public int OrderId { get; private set; }
 
-        public Payment(string paymentType, string status, decimal amount, int orderId)
+        public Orders Order { get; private set; }
+
+        private Payment()
         {
-            PaymentType = paymentType;
+        }
+
+        public Payment(DateTime date, string type, string status, string amount, int orderId)
+        {
+            Date = date;
+            Type = type;
             Status = status;
             Amount = amount;
             OrderId = orderId;

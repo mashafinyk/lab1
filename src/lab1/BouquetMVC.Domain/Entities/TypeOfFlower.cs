@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bouquet.Domain.Entities
+namespace BouquetMVC.Domain.Entities
 {
-    public class FlowerType : Entity
+    public class TypeOfFlower : Entity
     {
         public string Name { get; private set; }
         public string Colour { get; private set; }
         public double Height { get; private set; }
         public decimal Price { get; private set; }
 
-        public FlowerType(string name, string colour, double height, decimal price)
+        public TypeOfFlower(string name, string colour, double height, decimal price)
         {
             Name = name;
             Colour = colour;
